@@ -9,7 +9,7 @@ The module assumes that all the configuration files in JSON are in the `/config`
 The module loads 3 configuration files in the following order (each overwrites the previous if they have the same key):
 
 * default.json
-* <environment>.json (where <environment> is taken from the NODE_ENV environment variable. It uses "production" as default if the environment variable is not set)
+* environment.json (where environment is taken from the NODE_ENV environment variable. It uses "production" as default if the environment variable is not set)
 * runtime.json
 
 Each configuration file will override values from the previous file. For example:
