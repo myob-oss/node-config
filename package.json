@@ -1,0 +1,45 @@
+{
+  "name": "@myob-oss/config",
+  "version": "1.0.4",
+  "description": "A simple, predictable configuration module.",
+  "main": "lib/config-wrapper.js",
+  "scripts": {
+    "test": "node_modules/.bin/gulp test",
+    "cover": "node_modules/.bin/istanbul cover _mocha --config test/.istanbul.yml -- -R dot --recursive && node_modules/.bin/istanbul check-coverage --config test/.istanbul.yml",
+    "lint": "node_modules/.bin/gulp lint"
+  },
+  "author": "Damien Whaley <damien.whaley@myob.com>",
+  "contributors": [
+    "Damien Whaley <damien.whaley@myob.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MYOB-Technology/node-config.git"
+  },
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "deepmerge": "^2.0.1",
+    "json5": "^0.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^4.0.0",
+    "gulp-mocha": "^4.3.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^4.0.1",
+    "should": "^13.1.3"
+  },
+  "engines": {
+    "node": ">=6.x"
+  },
+  "keywords": [
+    "conf",
+    "config",
+    "configuration",
+    "env",
+    "environment"
+  ]
+}

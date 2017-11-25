@@ -1,0 +1,22 @@
+# This is the configuration file for code coverage tool Istanbul
+verbose: true
+instrumentation:
+    extension: .js
+    root: ./lib
+    excludes: []
+    include-all-sources: true
+reporting:
+    print: detail
+check:
+    global:
+        statements: 98.59
+        lines: 98.59
+        branches: 89.47
+        functions: 100
+        excludes: []
+    each:
+        statements: 94.44
+        lines: 94.44
+        branches: 50
+        functions: 100
+        excludes: []
