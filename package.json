@@ -1,6 +1,6 @@
 {
   "name": "@myob-oss/config",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple, predictable configuration module.",
   "main": "lib/config-wrapper.js",
   "scripts": {
@@ -16,13 +16,13 @@
     "type": "git",
     "url": "https://github.com/MYOB-Technology/node-config.git"
   },
-  "license": "BSD-3-Clause",
+  "license": "MIT",
   "dependencies": {
     "deepmerge": "^2.0.1",
     "json5": "^0.5.1"
   },
   "devDependencies": {
-    "eslint": "^4.11.0",
+    "eslint": "^4.13.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
     "gulp": "^3.9.1",
