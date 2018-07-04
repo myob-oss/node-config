@@ -4,10 +4,10 @@ function generateDefaultConfig(options) {
   }
 
   return {
-    which: 'default',
+    configurationFile: 'default',
     an_array: [1, 2, 3, 4],
     an_object: {
-      foo: 'bar',
+      property1: 'value1',
     },
     a_number: 1,
     a_string: 'boaty mcboatface',
@@ -21,10 +21,10 @@ function generateEnvironmentConfig(options) {
   }
 
   return {
-    which: 'environment',
+    configurationFile: 'environment',
     a_string: 'trainy mctrainface',
     an_array: [4, 5],
-    a_variant: ['how', 'zat'],
+    a_variant: ['an', 'array'],
   };
 }
 
@@ -34,13 +34,13 @@ function generateRuntimeConfig(options) {
   }
 
   return {
-    which: 'runtime',
+    configurationFile: 'runtime',
     an_object: {
-      foo: 'baz',
-      thing: 'amajig',
+      property1: 'value2',
+      another: 'property',
     },
     a_variant: {
-      how: 'zat',
+      an: 'object',
     },
   };
 }

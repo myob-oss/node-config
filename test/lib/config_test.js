@@ -42,15 +42,15 @@ describe('Config class', () => {
 
     let result = config.setConfig(config.getConstants().DEFAULT, defaultConfigFixture);
 
-    result.should.be.ok; // eslint-disable-line no-unused-expressions
+    result.should.be.ok();
 
     result = config.setConfig(config.getConstants().ENVIRONMENT, environmentConfigFixture);
 
-    result.should.be.ok; // eslint-disable-line no-unused-expressions
+    result.should.be.ok();
 
     result = config.setConfig(config.getConstants().RUNTIME, runtimeConfigFixture);
 
-    result.should.be.ok; // eslint-disable-line no-unused-expressions
+    result.should.be.ok();
 
     const defaultConfig = config.getConfig(config.getConstants().DEFAULT);
     const environmentConfig = config.getConfig(config.getConstants().ENVIRONMENT);
@@ -89,11 +89,11 @@ describe('Config class', () => {
   it('Should not load the configuration for invalid values', (done) => {
     let result = config.setConfig('invalid', {});
 
-    result.should.not.be.ok; // eslint-disable-line no-unused-expressions
+    result.should.not.be.ok();
 
     result = config.setConfig(config.getConstants().DEFAULT, null);
 
-    result.should.not.be.ok; // eslint-disable-line no-unused-expressions
+    result.should.not.be.ok();
 
     done();
   });
@@ -111,7 +111,7 @@ describe('Config class', () => {
 
     const effectiveConfig = config.getConfig(config.getConstants().EFFECTIVE);
 
-    effectiveConfig.which.should.equal('runtime');
+    effectiveConfig.configurationFile.should.equal('runtime');
 
     done();
   });

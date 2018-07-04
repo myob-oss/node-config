@@ -22,7 +22,7 @@ describe('File class', () => {
   it('Should get the contents of a file', (done) => {
     const result = file.getFileContents('default.json');
 
-    result.should.eql({ which: 'default' });
+    result.should.eql({ configurationFile: 'default' });
 
     done();
   });
