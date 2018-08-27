@@ -16,4 +16,14 @@ describe('ConfigWrapper class', () => {
     config2.configurationFile.should.eql(config.configurationFile);
     done();
   });
+
+  it('Should expose the same configuration if it is required for a third time later on', (done) => {
+    setTimeout(() => {
+      const config3 = require('../../lib/config-wrapper.js'); // eslint-disable-line global-require
+      config3.should.have.property('configurationFile');
+      config3.configurationFile.should.eql('runtime');
+      config3.configurationFile.should.eql(config.configurationFile);
+      done();
+    }, 300);
+  });
 });

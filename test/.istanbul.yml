@@ -1,5 +1,5 @@
 # This is the configuration file for code coverage tool Istanbul
-verbose: true
+verbose: false
 instrumentation:
     extension: .js
     root: ./lib
@@ -9,14 +9,14 @@ reporting:
     print: detail
 check:
     global:
-        statements: 98.57
-        lines: 98.57
-        branches: 89.47
+        statements: 100
+        lines: 100
+        branches: 94.44
         functions: 100
         excludes: []
     each:
-        statements: 94.12
-        lines: 94.12
-        branches: 50
+        statements: 100
+        lines: 100
+        branches: 83.33
         functions: 100
         excludes: []

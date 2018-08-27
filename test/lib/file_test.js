@@ -27,23 +27,31 @@ describe('File class', () => {
     done();
   });
 
+  it('Should not get the contents of a file which does not exist', (done) => {
+    const result = file.getFileContents('some-file-which-does-not-exist.json');
+
+    result.should.eql({});
+
+    done();
+  });
+
   it('Should get the environment', (done) => {
     const currentEnvironment = process.env.NODE_ENV;
 
     process.env.NODE_ENV = 'test';
-
     let result = file.getEnvironment();
+    result.should.eql('test');
 
     process.env.NODE_ENV = null;
-
     result = file.getEnvironment();
-
     result.should.eql('production');
 
     delete process.env.NODE_ENV;
-
     result = file.getEnvironment();
+    result.should.eql('production');
 
+    process.env.NODE_ENV = 'null';
+    result = file.getEnvironment();
     result.should.eql('production');
 
     process.env.NODE_ENV = currentEnvironment;
