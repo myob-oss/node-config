@@ -1,5 +1,5 @@
 # This is the configuration file for code coverage tool Istanbul
-verbose: true
+verbose: false
 instrumentation:
     extension: .js
     root: ./lib
