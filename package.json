@@ -5,7 +5,7 @@
   "main": "lib/config-wrapper.js",
   "scripts": {
     "test": "node_modules/.bin/mocha test/lib/*_test.js",
-    "cover": "node_modules/.bin/nyc --per-file npm run test",
+    "cover": "node_modules/.bin/nyc --per-file --reporter=html --reporter=text npm run test",
     "lint": "node_modules/.bin/eslint lib/*.js test/**/*.js"
   },
   "author": "Damien Whaley <damien.whaley@myob.com>",

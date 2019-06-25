@@ -87,7 +87,7 @@ npm test
 
 ## Code Coverage
 
-To run the coverage scanner and generate coverage report use the following command. It fails if the threshold coverage has not passed. The threshold settings are stored in the file `test/.istanbul.yml`.
+To run the coverage scanner and generate coverage report use the following command. It fails if the threshold coverage has not passed. The threshold settings are stored in the file `.nycrc`. Please note that the thresholds configured are per-file.
 
 ```bash
 npm run cover
@@ -95,7 +95,7 @@ npm run cover
 
 ## Linting
 
-To run the linting checking run the following command.
+To run the linting check run the following command.
 
 ```bash
 npm run lint
