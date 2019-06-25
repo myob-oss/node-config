@@ -4,9 +4,9 @@
   "description": "A simple, slightly opinionated, and predictable configuration module for Node.js applications.",
   "main": "lib/config-wrapper.js",
   "scripts": {
-    "test": "node_modules/.bin/gulp test",
-    "cover": "node_modules/.bin/istanbul cover _mocha --config test/.istanbul.yml -- -R dot --recursive && node_modules/.bin/istanbul check-coverage --config test/.istanbul.yml",
-    "lint": "node_modules/.bin/gulp lint"
+    "test": "node_modules/.bin/mocha test/lib/*_test.js",
+    "cover": "node_modules/.bin/nyc --per-file npm run test",
+    "lint": "node_modules/.bin/eslint lib/*.js test/**/*.js"
   },
   "author": "Damien Whaley <damien.whaley@myob.com>",
   "contributors": [
@@ -18,18 +18,15 @@
   },
   "license": "MIT",
   "dependencies": {
-    "deepmerge": "^2.1.1",
-    "json5": "^2.0.1"
+    "deepmerge": "^3.3.0",
+    "json5": "^2.1.0"
   },
   "devDependencies": {
-    "eslint": "^5.4.0",
+    "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "gulp": "^3.9.1",
-    "gulp-eslint": "^5.0.0",
-    "gulp-mocha": "^6.0.0",
-    "istanbul": "^0.4.5",
-    "mocha": "^5.2.0",
+    "eslint-plugin-import": "^2.18.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1",
     "should": "^13.2.3"
   },
   "engines": {
