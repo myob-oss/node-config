@@ -1,6 +1,6 @@
 {
   "name": "@myob-oss/config",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A simple, slightly opinionated, and predictable configuration module for Node.js applications.",
   "main": "lib/config-wrapper.js",
   "scripts": {
