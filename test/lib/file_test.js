@@ -1,6 +1,7 @@
 /* global it:false, describe:false, beforeEach:false */
 
 const File = require('../../lib/file.js');
+require('should');
 
 describe('File class', () => {
   let file;
