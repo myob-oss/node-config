@@ -2,6 +2,7 @@
 
 const config = require('../../lib/config-wrapper.js');
 const config2 = require('../../lib/config-wrapper.js');
+require('should');
 
 describe('ConfigWrapper class', () => {
   it('Should expose the configuration', (done) => {

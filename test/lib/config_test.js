@@ -2,6 +2,7 @@
 
 const Config = require('../../lib/config.js');
 const fixtures = require('../fixtures/config_fixtures.js');
+require('should');
 
 describe('Config class', () => {
   let config;
